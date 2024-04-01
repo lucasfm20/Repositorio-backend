@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.ArrayList;
+
 public class Jogador {
     private String nome;
     private String sobrenome;
@@ -31,6 +33,18 @@ public class Jogador {
     public String getDescricao(){
         return "\n"+ nome+" "+sobrenome +" é um futebolista brasileiro (a) de " +idade+" anos que atua como "+ posicao+".Atualmente defende o "+clube+".";
     }
+
+    public ArrayList<String> getVar(){
+        ArrayList<String> lista = new ArrayList<>();
+        lista.add("nome: "+nome);
+        lista.add("sobrenome: "+sobrenome);
+        lista.add("idade: " + String.valueOf(idade));
+        lista.add("clube: "+clube);
+        lista.add("posicao: "+posicao);
+    return lista;
+    }
+
+
 
 
     public Jogador(String nome,String sobrenome,String posicao, String clube, int idade){
