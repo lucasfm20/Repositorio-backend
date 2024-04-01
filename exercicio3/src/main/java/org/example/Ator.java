@@ -1,8 +1,12 @@
 package org.example;
 
-public class Ator implements Indicavel{
-   private String nome;
+public class Ator implements Indicavel {
+    private String nome;
     private String nacionalidade;
+
+
+    @Override
+
 
     public String getNome() {
         return nome;
@@ -17,6 +21,11 @@ public class Ator implements Indicavel{
     }
 
     public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
+
+    public Ator(String nome, String nacionalidade) {
+        this.nome = nome;
         this.nacionalidade = nacionalidade;
     }
 }

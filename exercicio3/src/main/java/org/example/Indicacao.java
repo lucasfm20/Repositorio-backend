@@ -13,7 +13,9 @@ public class Indicacao {
         this.categoria = categoria;
     }
 
-    public Indicacao(String categoria){
+
+    public Indicacao(String categoria,Indicavel indicavel){
         this.categoria = categoria;
+        this.indicavel = indicavel;
     }
 }

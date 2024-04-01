@@ -1,7 +1,7 @@
 package org.example;
 
-public class Filme implements Indicavel{
-   private String nome;
+public class Filme implements Indicavel {
+    private String nome;
     private String genero;
 
     public String getNome() {
@@ -18,5 +18,11 @@ public class Filme implements Indicavel{
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public Filme(String nome, String genero, Indicavel indicavel) {
+        this.nome = nome;
+        this.genero = genero;
+
     }
 }
