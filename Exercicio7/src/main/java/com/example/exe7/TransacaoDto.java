@@ -1,16 +1,19 @@
-package com.example.transacao.models;
+package com.example.exe7;
 
-public class Transacao {
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 
+public class TransacaoDto {
+    @NotEmpty
     private String recebedor;
-    private String pagador;
-    private Double quantidade;
 
-    public Transacao(String recebedor, String pagador, Double quantidade) {
-        this.recebedor = recebedor;
-        this.pagador = pagador;
-        this.quantidade = quantidade;
-    }
+    @NotEmpty
+    private String pagador;
+
+    @NotNull
+    @Positive
+    private Double quantidade;
 
     public String getRecebedor() {
         return recebedor;
